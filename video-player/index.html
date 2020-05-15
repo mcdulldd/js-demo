@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>视频播放器</title>
+</head>
+
+<body>
+  <h1>
+    自定义播放器
+  </h1>
+  <video id="video" class="screen" poster="img/poster.png"
+    src="https://www.runoob.com/try/demo_source/movie.mp4"></video>
+  <div class="controls">
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x"></i>
+    </button>
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x"></i>
+    </button>
+    <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+    <span class="timestamp" id="timestamp">00:00</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
